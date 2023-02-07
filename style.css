@@ -1,8 +1,17 @@
-body.body{
+main.main1{
+    text-align: left;
     position: relative;
     left: 300px;
 }
 
-main.main{
+main.main2{
     text-align: left;
+    position: relative;
+    left: 300px;
+}
+
+main.main3{
+    text-align: left;
+    position: relative;
+    left: 300px;
 }

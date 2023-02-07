@@ -7,8 +7,8 @@
     <title>Practica_3.14</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
-    <main class="main">
+<body>
+    <main class="main1">
         <h3>Accede a tu Area Clientes</h3>
         <p>Elige tu documento <br>
             <input type="radio" name="radio1" value="DNIoT.Resid"> DNI o Tarjeta de residencia
@@ -22,14 +22,81 @@
         <p>Fecha de nacimiento<br>
             <input type="date" name="fech_nacimiento" id="fecha_nacimiento">
         </p>
-<br>
+
         <p>
             <input type="checkbox" name="recordar" id="recordar">Recordar
         </p>
 
-        
+        <p>
+            <input type="button" name="boton_entrar" value="Entrar">
+        </p>
 
+        <p>
+            > Acede con DNI electronioco <br> > Mas informacion sobre seguridad
+        </p>
+   
+    </main>
+    <hr>
+    <main class="main2">
+        <form action="pagina.php">
+            <input type="text" class="form1" placeholder="Nombre (como sale en el DNI)">
+            <br>
+            <br>
+            <input type="text" class="hola" placeholder="1º apellido (como sale en el DNI)">
+            <input type="text" class="form2" placeholder="2º apellido (como sale en el DNI)">
+            <br><br>
+                <strong>TIPO DE DOCUMENTO</strong>
+                <br>
+                <select class="form" name="tipo_documento">
+                    <option selected>Elija una Opción</option>
+                    <option>DNI</option>
+                    <option>NIF</option>
+                    <option>CERT. AEAT</option>
+                </select>
+            <input type="text" class="form2" placeholder="Nº de Documento">
+            <br>
+            <br>
+            <input type="text" class="hola" placeholder="Móvil">
+            <input type="text" class="form2" placeholder="Email">
+        </form>
+    </main>
+    <hr>
+    <main class="main3">
+        <strong>¿Eres Nuevo?</strong>
+        <p class="separado">Regístrate para guardar tu información y hacer <br> tus pedidos de forma más fácil y rápida</p>
+        <section>
+            <form action="pagina.php">
+            <p class="documento">Email
+                <br>
+                <input type="text" class="texto_documento" placeholder="Introduce tu email">
+            </p>
+            <p class="documento"> Teléfono
+                <br>
+                <input type="text" class="texto_documento" placeholder="Tu teléfono">
+            </p>
+            <p class="documento"> Contraseña
+                <br>
+                <input type="text" class="texto_documento" placeholder="Introduce tu contraseña">
+            </p>
+            <p class="documento">Confirma tu contraseña <br>
+                <input type="text" class="texto_documento" placeholder="Confirmar contraseña">
+            </p>
+            <label>
+                <input type="checkbox" value="recordar"><span class="documento">He leído y acepto la <a href="https://www.pizzahut.es/info/aviso-legal">Pólitica de Privacidad</a></span>
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" value="recordar"><span class="documento">Sí, acepto recibir comunicaiones comerciales <br> y ofertas personalizadas según mi perfil</span>
+            </label>
+            <br>
+            <br>
+            <input type="submit" value="Crea tu cuenta" class="enviar">
+            
+            </form>
 
     </main>
+
+
 </body>
 </html>
